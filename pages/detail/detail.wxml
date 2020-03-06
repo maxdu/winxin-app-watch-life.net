@@ -42,46 +42,6 @@
     <!-- 文章正文 -->
     <view class="entry-summary" id="entry-summary" style="height:{{detailSummaryHeight}}">
 
-        <!-- 音频 -->
-        <view class='audioPlayer' style="display:{{displayAudio}}">
-          <view class='player'>
-            <view class='audioControls'>
-              <view class='flex'>
-                <view class='audio_left'>
-                  <image src='{{detail.post_medium_image}}' class='audio_img' mode="aspectFill"></image>
-                  <view class='audio_btn' catchtap='playAudio'>
-                    <!-- 按钮 -->
-                    <view wx:if="{{isPlayAudio}}">
-                      <image src='../../images/pause.png' class='audio_btn_icon' />
-                    </view>
-                    <view wx:else>
-                      <image src='../../images/play.png' class='audio_btn_icon' />
-                    </view>
-                  </view>
-                </view>
-
-                <view class='audio_right'>
-                  <view class='audio_title'>{{detail.audios[0].title}}</view>
-                  <view class='audio_singer'>{{detail.audios[0].singer}}</view>
-                  <view class='slider'>
-                    <slider bindchange='sliderChange' activeColor='red' block-size="12" value='{{audioTime}}' />
-                  </view>
-                  <view class='time_box'>
-                    <view class='time'>
-                      {{showTime1}}
-                    </view>
-                    <view class='time'>
-                      {{showTime2}}
-                    </view>
-                  </view>
-                </view>
-
-              </view>
-            </view>
-          </view>
-        </view>
-
-
       <template is="wxParse" data="{{wxParseData:article.nodes}}" />
 
       <!-- 阅读更多 -->
@@ -94,7 +54,6 @@
     </view>
 
     
-
 
     <!--  上下文  -->
     <view wx:if="{{detail.previous_post_id || detail.next_post_id}}" class="up-down-post">
