@@ -47,7 +47,7 @@
       <!-- 阅读更多 -->
         <view class="detail-read-more" wx:if="{{detailSummaryHeight != ''}}">
           <view class="detail-readmore-mask">
-            <view class="detail-readmore-btn" bindtap="readMore">观看视频，阅读更多...</view>
+            <view class="detail-readmore-btn" bindtap="readMore">看完视频，阅读完整内容...</view>
           </view>
         </view>
 

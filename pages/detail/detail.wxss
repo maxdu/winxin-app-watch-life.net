@@ -775,10 +775,13 @@ z-index: 1!important;
 }
 
 .lotto_line {
+  width: 100%;
+  height: 10%;
   flex-direction: row;
   flex-wrap: nowrap;
   display: flex;
   justify-content: space-evenly;
+  white-space: nowrap;
 }
 
 .lotto_type {
@@ -791,31 +794,68 @@ z-index: 1!important;
   display: flex;
   width: 60%;
   height: auto;
+  font-size: 10px;
 }
 
 .balls_prize {
   display: flex;
   width: 40%;
   height: auto;
+  font-size: 10px;
 }
 
 .balls_winners {
   display: flex;
   width: 20%;
   height: auto;
+  font-size: 10px;
 }
 
 .balls_next_prize {
   display: flex;
   width: 40%;
   height: auto;
+  font-size: 10px;
 }
 
 .many_balls {
   background-size:100%; 
   background-repeat:no-repeat; 
-  font-size:16px; 
-  width:40px; 
+  font-size:12px; 
+  width:14%; 
   height:auto; 
   margin: 2px;
+}
+
+.lotto_text{
+  display: flex;
+  width: 40%;
+  height: auto;
+  color: red;
+  font-weight: bolder;
+  justify-content: center;
+}
+
+.lotto_current_draw {
+
+}
+
+.lotto_current_draw_title {
+
+}
+
+.lotto_current_draw_date {
+
+}
+
+.lotto_next_draw {
+  
+}
+
+.lotto_next_draw_title {
+  
+}
+
+.lotto_next_draw_date {
+  
 }
