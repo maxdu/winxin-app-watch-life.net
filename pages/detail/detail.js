@@ -1271,12 +1271,15 @@ Page({
           })
         } else {
 
+          wx.navigateBack({
+            delta:1
+          });
+
           wx.showToast({
-            title: "你中途关闭了视频",
+            title: "您中途关闭了视频...",
             icon: "none",
             duration: 3000
           });
-
           
         }
       })
