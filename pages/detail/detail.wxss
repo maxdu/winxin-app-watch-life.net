@@ -784,9 +784,43 @@ z-index: 1!important;
   white-space: nowrap;
 }
 
+.legend_line {
+  width: 100%;
+  height: 10%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  display: flex;
+  justify-content: center;
+  white-space: nowrap;
+}
+
 .lotto_type {
   display: flex;
   width: 40%;
+  height: auto;
+}
+
+.lotto_type {
+  display: flex;
+  width: 40%;
+  height: auto;
+}
+
+.balLegend {
+  display: flex;
+  width: 14%;
+  height: auto;
+}
+
+.balLegendDescImage {
+  display: flex;
+  width: 20%;
+  height: auto;
+}
+
+.balLegendDescWord {
+  display: flex;
+  width: 30%;
   height: auto;
 }
 
@@ -844,6 +878,10 @@ z-index: 1!important;
   text-align: center;
 }
 
+.lotto_current_draw_winners {
+  text-align: center;
+}
+
 .lotto_current_draw_date {
   color: red;
   text-align: center;
@@ -860,4 +898,27 @@ z-index: 1!important;
 .lotto_next_draw_date {
   color: red;
   text-align: center;
+}
+
+.division_seq{
+  display: flex;
+  width: 9%;
+  font-size: 0.6em;
+}
+
+.division_legend{
+  display: flex;
+  width: 39%;
+}
+
+.division_prize{
+  display: flex;
+  width: 29%;
+  font-size: 0.8em;
+}
+
+.division_winners{
+  display: flex;
+  width: 14%;
+  font-size: 0.8em;
 }
