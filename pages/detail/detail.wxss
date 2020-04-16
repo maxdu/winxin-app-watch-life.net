@@ -922,3 +922,15 @@ z-index: 1!important;
   width: 14%;
   font-size: 0.8em;
 }
+
+.logo-channel {
+  height: 30px;
+}
+
+.logo-channel-branch {
+  height: 80px;
+}
+
+.price-ref-image {
+  height: 200px;
+}

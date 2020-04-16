@@ -16,6 +16,9 @@
     <video class="{{item.classStr}} wxParse-{{item.tag}}-video" src="{{item.attr.src}}"></video>
   </view>
 </template>
+<template name="txv_Video">
+  <txv-video playerid="txv1" vid="{{item.classStr}}"></txv-video>
+</template>
 <template name="wxParseAudio">
   <!--增加audio标签支持，并循环添加-->
   <view class="{{item.classStr}} wxParse-{{item.tag}}" style="{{item.styleStr}}">
@@ -86,10 +89,14 @@
       </view>
     </block>
 
-    <!--video类型-->
-    <block wx:elif="{{item.tag == 'video'}}">
-      <template is="wxParseVideo" data="{{item}}" />
-    </block>
+<!--video类型-->
+<block wx:elif="{{item.tag == 'video'}}">
+  <template is="wxParseVideo" data="{{item}}" />
+</block>
+<!--txv-video类型-->
+<block wx:elif="{{item.tag == 'txv-video'}}">
+  <template is="txv_Video" data="{{item}}" />
+</block>
 
     <!--audio类型-->
     <block wx:elif="{{item.tag == 'audio'}}">
@@ -202,10 +209,14 @@
       </view>
     </block>
 
-    <!--video类型-->
-    <block wx:elif="{{item.tag == 'video'}}">
-      <template is="wxParseVideo" data="{{item}}" />
-    </block>
+<!--video类型-->
+<block wx:elif="{{item.tag == 'video'}}">
+  <template is="wxParseVideo" data="{{item}}" />
+</block>
+<!--txv-video类型-->
+<block wx:elif="{{item.tag == 'txv-video'}}">
+  <template is="txv_Video" data="{{item}}" />
+</block>
 
     <!--audio类型-->
     <block wx:elif="{{item.tag == 'audio'}}">
@@ -293,10 +304,14 @@
       </view>
     </block>
 
-    <!--video类型-->
-    <block wx:elif="{{item.tag == 'video'}}">
-      <template is="wxParseVideo" data="{{item}}" />
-    </block>
+<!--video类型-->
+<block wx:elif="{{item.tag == 'video'}}">
+  <template is="wxParseVideo" data="{{item}}" />
+</block>
+<!--txv-video类型-->
+<block wx:elif="{{item.tag == 'txv-video'}}">
+  <template is="txv_Video" data="{{item}}" />
+</block>
 
     <!--audio类型-->
     <block wx:elif="{{item.tag == 'audio'}}">
@@ -383,10 +398,14 @@
       </view>
     </block>
 
-    <!--video类型-->
-    <block wx:elif="{{item.tag == 'video'}}">
-      <template is="wxParseVideo" data="{{item}}" />
-    </block>
+<!--video类型-->
+<block wx:elif="{{item.tag == 'video'}}">
+  <template is="wxParseVideo" data="{{item}}" />
+</block>
+<!--txv-video类型-->
+<block wx:elif="{{item.tag == 'txv-video'}}">
+  <template is="txv_Video" data="{{item}}" />
+</block>
 
     <!--audio类型-->
     <block wx:elif="{{item.tag == 'audio'}}">
@@ -473,10 +492,14 @@
       </view>
     </block>
 
-    <!--video类型-->
-    <block wx:elif="{{item.tag == 'video'}}">
-      <template is="wxParseVideo" data="{{item}}" />
-    </block>
+<!--video类型-->
+<block wx:elif="{{item.tag == 'video'}}">
+  <template is="wxParseVideo" data="{{item}}" />
+</block>
+<!--txv-video类型-->
+<block wx:elif="{{item.tag == 'txv-video'}}">
+  <template is="txv_Video" data="{{item}}" />
+</block>
 
     <!--audio类型-->
     <block wx:elif="{{item.tag == 'audio'}}">
@@ -563,10 +586,14 @@
       </view>
     </block>
 
-    <!--video类型-->
-    <block wx:elif="{{item.tag == 'video'}}">
-      <template is="wxParseVideo" data="{{item}}" />
-    </block>
+<!--video类型-->
+<block wx:elif="{{item.tag == 'video'}}">
+  <template is="wxParseVideo" data="{{item}}" />
+</block>
+<!--txv-video类型-->
+<block wx:elif="{{item.tag == 'txv-video'}}">
+  <template is="txv_Video" data="{{item}}" />
+</block>
 
     <!--audio类型-->
     <block wx:elif="{{item.tag == 'audio'}}">
@@ -653,10 +680,14 @@
       </view>
     </block>
 
-    <!--video类型-->
-    <block wx:elif="{{item.tag == 'video'}}">
-      <template is="wxParseVideo" data="{{item}}" />
-    </block>
+<!--video类型-->
+<block wx:elif="{{item.tag == 'video'}}">
+  <template is="wxParseVideo" data="{{item}}" />
+</block>
+<!--txv-video类型-->
+<block wx:elif="{{item.tag == 'txv-video'}}">
+  <template is="txv_Video" data="{{item}}" />
+</block>
 
     <!--audio类型-->
     <block wx:elif="{{item.tag == 'audio'}}">
@@ -742,10 +773,14 @@
       </view>
     </block>
 
-    <!--video类型-->
-    <block wx:elif="{{item.tag == 'video'}}">
-      <template is="wxParseVideo" data="{{item}}" />
-    </block>
+<!--video类型-->
+<block wx:elif="{{item.tag == 'video'}}">
+  <template is="wxParseVideo" data="{{item}}" />
+</block>
+<!--txv-video类型-->
+<block wx:elif="{{item.tag == 'txv-video'}}">
+  <template is="txv_Video" data="{{item}}" />
+</block>
 
     <!--audio类型-->
     <block wx:elif="{{item.tag == 'audio'}}">
@@ -832,10 +867,14 @@
       </view>
     </block>
 
-    <!--video类型-->
-    <block wx:elif="{{item.tag == 'video'}}">
-      <template is="wxParseVideo" data="{{item}}" />
-    </block>
+<!--video类型-->
+<block wx:elif="{{item.tag == 'video'}}">
+  <template is="wxParseVideo" data="{{item}}" />
+</block>
+<!--txv-video类型-->
+<block wx:elif="{{item.tag == 'txv-video'}}">
+  <template is="txv_Video" data="{{item}}" />
+</block>
 
     <!--audio类型-->
     <block wx:elif="{{item.tag == 'audio'}}">
@@ -922,10 +961,14 @@
       </view>
     </block>
 
-    <!--video类型-->
-    <block wx:elif="{{item.tag == 'video'}}">
-      <template is="wxParseVideo" data="{{item}}" />
-    </block>
+<!--video类型-->
+<block wx:elif="{{item.tag == 'video'}}">
+  <template is="wxParseVideo" data="{{item}}" />
+</block>
+<!--txv-video类型-->
+<block wx:elif="{{item.tag == 'txv-video'}}">
+  <template is="txv_Video" data="{{item}}" />
+</block>
 
     <!--audio类型-->
     <block wx:elif="{{item.tag == 'audio'}}">
@@ -1012,10 +1055,14 @@
       </view>
     </block>
 
-    <!--video类型-->
-    <block wx:elif="{{item.tag == 'video'}}">
-      <template is="wxParseVideo" data="{{item}}" />
-    </block>
+<!--video类型-->
+<block wx:elif="{{item.tag == 'video'}}">
+  <template is="wxParseVideo" data="{{item}}" />
+</block>
+<!--txv-video类型-->
+<block wx:elif="{{item.tag == 'txv-video'}}">
+  <template is="txv_Video" data="{{item}}" />
+</block>
 
     <!--audio类型-->
     <block wx:elif="{{item.tag == 'audio'}}">
@@ -1102,10 +1149,14 @@
       </view>
     </block>
 
-    <!--video类型-->
-    <block wx:elif="{{item.tag == 'video'}}">
-      <template is="wxParseVideo" data="{{item}}" />
-    </block>
+<!--video类型-->
+<block wx:elif="{{item.tag == 'video'}}">
+  <template is="wxParseVideo" data="{{item}}" />
+</block>
+<!--txv-video类型-->
+<block wx:elif="{{item.tag == 'txv-video'}}">
+  <template is="txv_Video" data="{{item}}" />
+</block>
 
     <!--audio类型-->
     <block wx:elif="{{item.tag == 'audio'}}">

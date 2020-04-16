@@ -42,6 +42,8 @@
     <!-- 文章正文 -->
     <view class="entry-summary" id="entry-summary" style="height:{{detailSummaryHeight}}">
 
+      <!-- <txv-video playerid="txv1" vid="s0908laz65j"></txv-video> -->
+
       <template is="wxParse" data="{{wxParseData:article.nodes}}" />
 
       <!-- 阅读更多 -->

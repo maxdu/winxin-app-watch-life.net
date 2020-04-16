@@ -14,13 +14,12 @@
         "pages/comments/comments",
         "pages/poster/poster",
         "pages/search/search"
-        
     ],
     "window": {
         "backgroundTextStyle": "dark",
         "navigationBarBackgroundColor": "#118fff",
         "navigationBarTitleText": "比洋价(易在纽国)",
-        "navigationBarTextStyle": "white",        
+        "navigationBarTextStyle": "white",
         "pageOrientation": "auto"
     },
     "tabBar": {
@@ -67,5 +66,11 @@
         "wxfd6bb7114494fd82"
     ],
     "sitemapLocation": "sitemap.json",
-    "resizable":false
+    "resizable": false,
+    "plugins": {
+        "tencentvideo": {
+            "version": "1.3.12",
+            "provider": "wxa75efa648b60994b"
+        }
+    }
 }
